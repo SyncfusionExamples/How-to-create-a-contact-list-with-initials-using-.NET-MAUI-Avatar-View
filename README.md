@@ -13,10 +13,11 @@ The .NET MAUI single character initial view can be achieved using the `SingleCha
 The following code sample is an example for .NET MAUI Initials View with single character.
 
 **XAML**
-
+```
 <sfAvatar:SfAvatarView ContentType="Initials"
      InitialsType="SingleCharacter" >
 </sfAvatar:SfAvatarView>
+```
  
 ### .NET MAUI Double Character Initials View
 The .NET MAUI double character initial view can be achieved using the `DoubleCharacter` option of the `InitialsType` property of the SfAvatarView.
@@ -24,17 +25,23 @@ The following code sample is an example for .NET MAUI Initials View with double 
 
 **XAML**
 
+```
 <sfAvatar:SfAvatarView ContentType="Initials"
      InitialsType="DoubleCharacter" >
 </sfAvatar:SfAvatarView>
+```
 
 ## Steps to add .NET MAUI Initials View
 This section explains how to create a contact list with initials view with a double character in a .NET MAUI application.
+
 **Step 1**: Create a .NET MAUI application project in Visual Studio 2022.
+
 **Step 2**: Add the [Syncfusion.Maui.Core](https://www.nuget.org/packages/Syncfusion.Maui.Core/) Nuget to the project from [nuget.org](https://www.nuget.org/).
+
 **Step 3**: In the MauiProgram.cs file, register the Syncfusion.Maui.Core handler as follows.
 
 **C#**
+```
 
 using Syncfusion.Maui.Core.Hosting;
 namespace AvatarView_ContactList;
@@ -55,23 +62,23 @@ public static class MauiProgram
         return builder.Build();
     }
 }
-
+```
 
 **Step 4**: Add the .NET MAUI Avatar View control namespace to the MainPage.xaml.
 
 **XAML**
-
+```
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AvatarView_ContactList.MainPage"
              xmlns:sfAvatar="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
              xmlns:local="clr-namespace:AvatarView_ContactList">
 
-
+```
 **Step 5**: Create a list of contact details in the view model. Have a property Name that holds the value to be shown as in the .NET MAUI Initials View.
 
 **C#**
-
+```
 public class Contact
 {
     public string Name { get; set; }
@@ -97,13 +104,13 @@ public class ContactsViewModel
         ListOfContacts.Add(new Contact() { Name = "Logan James" });
     }
 }
-
+```
 
 **Step 6**: Define the Avatar View (SfAvatarView) in the XAML and set the `ContentType` as `Initials` and set the `InitialType` property as `DoubleCharacter`. To create initials for the contact in the .NET MAUI Avatar View, populate the contact list in the collection view and bind the contact’s name to the `AvatarName` property.
 This will display the Avatar View as Initials View in a circle shape.
 
 **XAML**
-
+```
 <ContentPage.BindingContext>
     <local:ContactsViewModel/>
 </ContentPage.BindingContext>
@@ -129,7 +136,7 @@ This will display the Avatar View as Initials View in a circle shape.
         </CollectionView.ItemTemplate>
     </CollectionView>
 </Grid>
-
+```
 
 You can explore the runnable demo of achieving the .NET MAUI Initials View in this repository
 
