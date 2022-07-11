@@ -134,7 +134,8 @@ This will display the Avatar View as Initials View in a circle shape.
                     </sfAvatar:SfAvatarView>
                     <Label Text="{Binding Name}"
                             HorizontalOptions="Center" VerticalOptions="Center"
-                            HorizontalTextAlignment="Center"   						     VerticalTextAlignment="Center"/>
+                            HorizontalTextAlignment="Center"   						     
+                            VerticalTextAlignment="Center"/>
                 </HorizontalStackLayout>
             </DataTemplate>
         </CollectionView.ItemTemplate>
