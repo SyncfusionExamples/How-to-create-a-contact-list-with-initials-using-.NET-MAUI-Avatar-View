@@ -18,7 +18,9 @@ The following code sample is an example for .NET MAUI Initials View with single 
      InitialsType="SingleCharacter" >
 </sfAvatar:SfAvatarView>
 ```
- 
+
+![.NET MAUI Initials View with Single Character](https://user-images.githubusercontent.com/97146356/178326105-5acad276-a967-4df9-b054-3c7c97f55c70.png)
+
 ### .NET MAUI Double Character Initials View
 The .NET MAUI double character initial view can be achieved using the `DoubleCharacter` option of the `InitialsType` property of the SfAvatarView.
 The following code sample is an example for .NET MAUI Initials View with double characters.
@@ -30,6 +32,8 @@ The following code sample is an example for .NET MAUI Initials View with double 
      InitialsType="DoubleCharacter" >
 </sfAvatar:SfAvatarView>
 ```
+![.NET MAUI Initials View with Double Character](https://user-images.githubusercontent.com/97146356/178326460-0b8541b4-2113-4c9c-b1c9-1419f7205c3c.png)
+
 
 ## Steps to add .NET MAUI Initials View
 This section explains how to create a contact list with initials view with a double character in a .NET MAUI application.
@@ -137,6 +141,10 @@ This will display the Avatar View as Initials View in a circle shape.
     </CollectionView>
 </Grid>
 ```
+
+**Output**
+
+![.NET MAUI Initials View](https://user-images.githubusercontent.com/97146356/178326691-fd68ab78-0fe3-4376-b8cc-8a24f3dcb219.jpg)
 
 You can explore the runnable demo of achieving the .NET MAUI Initials View in this repository
 
